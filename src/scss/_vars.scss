@@ -1,0 +1,40 @@
+
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1440;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1200;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer+$containerPadding;
+
+$fontFamily: "Gilroy", sans-serif;
+$fontSize: rem(16);
+
+$mainColor: #002A48;
+$secondaryColor: #EAEAEA;
+$backgroundColor: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+$accentColor: #003459;
+$activeColor: #042F4E;
+$lightColor: #ffffff;
+$darkColor: rgba(0, 0, 0, 0.8);
+$textColor: #242B33;
+
+$md1: $maxWidthContainer+12+px; // ПК, ноутбуки
+$md2: 991.98+px; // Планшеты
+$md3: 767.98+px; // Телефоны L
+$md4: 479.98+px; // Телефоны S
+
+$btnBoxShadow:  0px 2px 3px rgba(#000, 10%), 
+                0px 8px 3px rgba(#000, 10%);
+                $hoverBoxShadow:  0 0 5px 0 rgba(#000, 10%), 
+                0 0 10px 0 rgba(#000, 10%), 
+                0 0 15px 0 rgba(#000, 10%);
+$menuBoxShadow:   0 5px 20px rgba(0, 0, 0, 0.1);
+$formBoxShadow:  0px 123px 49px rgba(0, 0, 0, 0.01),
+               0px 69px 42px rgba(0, 0, 0, 0.05),
+               0px 31px 31px rgba(0, 0, 0, 0.09),
+               0px 8px 17px rgba(0, 0, 0, 0.1),
+               0px 0px 0px rgba(0, 0, 0, 0.1); 

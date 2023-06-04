@@ -1,0 +1,48 @@
+/* --------- btn --------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px 10px;
+  border-radius: 50px;
+  background: #003459;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: $activeColor;
+      background-color: $activeColor;
+    }
+  }
+
+  &:active {
+    border-color: $activeColor;
+    background-color: $activeColor;
+  }
+
+  &.focus-visible {
+    border-color: red;
+    color: #fff;
+    background-color: $activeColor;
+  }
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
