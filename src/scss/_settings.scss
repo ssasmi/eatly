@@ -12,7 +12,8 @@
 
 //create focus-vizible only mobile
 .link {
-  color: $mainColor;
+  //color: $mainColor;
+  cursor: pointer;
   transition: color 0.3s ease-in-out;
 
   &:focus {
@@ -73,7 +74,7 @@
 }
 
 .choices__list {
-  
+
   font-size: 18px;
 }
 
