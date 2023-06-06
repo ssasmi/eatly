@@ -1,12 +1,15 @@
 .header {
   &__container {
-    @include adaptiv-value("padding-bottom", 24.6, 10);
-    @include adaptiv-value("padding-top", 48, 10);
+
+  }
+  &__wrap {
     display: flex;
     align-items: center;
     flex-wrap: no-wrap;
     @include adaptiv-value("gap", 103, 10);
     border-bottom: 1px solid #cbcbcb;
+    @include adaptiv-value("padding-bottom", 24.6, 10);
+    @include adaptiv-value("padding-top", 48, 10);
   }
   &__logo {
     font-family: "Poppins";

@@ -3,19 +3,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 17.8286px 26.7429px;
+  padding: 16.8286px 25.7429px;
   background: #6c5fbc;
+  border: 1px solid #6c5fbc;
   border-radius: 17.8286px;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17.8286px;
-  line-height: 27px;
+  line-height: 1.5;
   color: #f9f9f9;
   white-space: nowrap;
+  text-transform: capitalize;
 
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   cursor: pointer;
 
   &:focus {
@@ -29,15 +31,23 @@
     }
   }
 
-  &:active {
-    border-color: $activeColor;
-    background-color: $activeColor;
-  }
-
   &.focus-visible {
     border-color: red;
     color: #fff;
     background-color: $activeColor;
+  }
+}
+
+.btn-around {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #606060;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: transparent;
+      border-color: #6c5fbc;
+    }
   }
 }
 
@@ -46,4 +56,10 @@
   padding: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.btn:active {
+  border: 1px solid $activeColor;
+  background: $activeColor;
+  color: #fff;
 }
