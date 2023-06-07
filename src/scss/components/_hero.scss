@@ -8,12 +8,18 @@
   // .hero__content
   &__content {
     max-width: 558px;
-    @include adaptiv-value("padding-top", 119, 20);
-    grid-column: span 12;
+    @include adaptiv-value("padding-top", 119, 57);
+    grid-column: 1 / 6 span;
+
+    @media (max-width:$md4){
+      grid-column: 12 span;
+      text-align: center;
+    }
   }
   // .hero__note
   &__note {
     position: relative;
+    display: inline-block;
     font-family: "Poppins";
     font-weight: 600;
     font-size: 15px;
@@ -40,7 +46,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 75px;
+    //font-size: 75px;
+    @include adaptiv-value("font-size", 75, 46);
     line-height: 1.2;
     letter-spacing: -3px;
 
@@ -120,32 +127,37 @@
   // .hero__image
   &__image {
     padding-top: 80px;
-    grid-column: -1 / span 12;
-    position: relative;
-    right: -22px;
-    top: -10px;
-    &::before {
-      content: "";
-      position: absolute;
-      left: -13px;
-      bottom: 29px;
-      width: 38px;
-      height: 33px;
-      background-image: url("../img/svg/hero-2.svg");
-      background-repeat: no-repeat;
+    grid-column: 6 span;
+
+    @media (max-width:$md4){
+      grid-column: 12 span;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      right: -16px;
-      top: 56px;
-      width: 42px;
-      height: 24px;
-      background-image: url("../img/svg/hero-1.svg");
-      background-repeat: no-repeat;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: -13px;
+    //   bottom: 29px;
+    //   width: 38px;
+    //   height: 33px;
+    //   background-image: url("../img/svg/hero-2.svg");
+    //   background-repeat: no-repeat;
+    // }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: -16px;
+    //   top: 56px;
+    //   width: 42px;
+    //   height: 24px;
+    //   background-image: url("../img/svg/hero-1.svg");
+    //   background-repeat: no-repeat;
+    // }
   }
   // .hero__img
   &__img {
+    position: relative;
+    top: -34px;
+    right: -38px;
+    z-index: -1;
   }
 }

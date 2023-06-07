@@ -73,53 +73,59 @@
 
 // validateForms('.form-1', rules1, afterForm);
 
+
+
+
+
+
+
 //select choices
-const defaultSelect = () => {
-  const element = document.querySelector(".default");
-  const choices = new Choices(element, {
-    // searchEnabled: false,
-    noResultsText: "Ничего не найдено",
-    searchEnabled: false,
-    searchChoices: true,
-    searchFloor: 1,
-    itemSelectText: "",
-    callbackOnCreateTemplates: function (template) {
-      let classNames = this.config.classNames;
-      let itemSelectText = this.config.itemSelectText;
-      return {
-        choice: function (classNames, data) {
-          return template(`<div class="${String(classNames.item)} ${String(
-            classNames.itemChoice
-          )} ${String(
-            data.disabled ? classNames.itemDisabled : classNames.itemSelectable
-          )}"
-                                  data-select-text="${String(itemSelectText)}"
-                                  data-choice ${String(
-                                    data.disabled
-                                      ? "data-choice-disabled aria-disabled=true"
-                                      : "data-choice-selectable"
-                                  )}
-                                  data-id="${String(data.id)}"
-                                  data-value="${String(data.value)}"
-                                  data-label="${String(data.label)}"
-                                  ${String(
-                                    data.groupId > 0
-                                      ? 'role="treeitem"'
-                                      : 'role="option"'
-                                  )}>
-                                      <img src="${String(data.value)}" alt="">
-                                      ${String(data.label)}
-                                  </div>`);
-        },
-      };
-    },
-  });
+// const defaultSelect = () => {
+//   const element = document.querySelector(".default");
+//   const choices = new Choices(element, {
+//     // searchEnabled: false,
+//     noResultsText: "Ничего не найдено",
+//     searchEnabled: false,
+//     searchChoices: true,
+//     searchFloor: 1,
+//     itemSelectText: "",
+//     callbackOnCreateTemplates: function (template) {
+//       let classNames = this.config.classNames;
+//       let itemSelectText = this.config.itemSelectText;
+//       return {
+//         choice: function (classNames, data) {
+//           return template(`<div class="${String(classNames.item)} ${String(
+//             classNames.itemChoice
+//           )} ${String(
+//             data.disabled ? classNames.itemDisabled : classNames.itemSelectable
+//           )}"
+//                                   data-select-text="${String(itemSelectText)}"
+//                                   data-choice ${String(
+//                                     data.disabled
+//                                       ? "data-choice-disabled aria-disabled=true"
+//                                       : "data-choice-selectable"
+//                                   )}
+//                                   data-id="${String(data.id)}"
+//                                   data-value="${String(data.value)}"
+//                                   data-label="${String(data.label)}"
+//                                   ${String(
+//                                     data.groupId > 0
+//                                       ? 'role="treeitem"'
+//                                       : 'role="option"'
+//                                   )}>
+//                                       <img src="${String(data.value)}" alt="">
+//                                       ${String(data.label)}
+//                                   </div>`);
+//         },
+//       };
+//     },
+//   });
 
-  let ariaLabel = element.getAttribute("aria-label");
-  element.closest(".choices").setAttribute("aria-label", ariaLabel);
-};
+//   let ariaLabel = element.getAttribute("aria-label");
+//   element.closest(".choices").setAttribute("aria-label", ariaLabel);
+// };
 
-defaultSelect();
+// defaultSelect();
 
 //fls
 import * as functionsFl from "./fl/functions-fl.js";

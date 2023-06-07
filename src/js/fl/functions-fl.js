@@ -96,7 +96,7 @@ export let _slideUp = (target, duration = 500, showmore = 0) => {
 			target.style.removeProperty('transition-duration');
 			target.style.removeProperty('transition-property');
 			target.classList.remove('_slide');
-			// Создаем событие 
+			// Создаем событие
 			document.dispatchEvent(new CustomEvent("slideUpDone", {
 				detail: {
 					target: target
@@ -131,7 +131,7 @@ export let _slideDown = (target, duration = 500, showmore = 0) => {
 			target.style.removeProperty('transition-duration');
 			target.style.removeProperty('transition-property');
 			target.classList.remove('_slide');
-			// Создаем событие 
+			// Создаем событие
 			document.dispatchEvent(new CustomEvent("slideDownDone", {
 				detail: {
 					target: target
@@ -643,7 +643,7 @@ export function showMore() {
   });
 }
 
-// Прочие вспомогательные функции 
+// Прочие вспомогательные функции
 // FLS (Full Logging System)
 export function FLS(message) {
   setTimeout(() => {
@@ -744,7 +744,7 @@ window.onload = function () {
     //document.addEventListener("touchstart", documentMobileRes);
     function documentActions(e) {
       const targetElement = e.target;
-  
+
       //reset window.innerWidth > 768 && isMobile.any()
       if (isMobile.any()) {
         if (targetElement.classList.contains("menu__arrow")) {
