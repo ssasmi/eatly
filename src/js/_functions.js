@@ -144,7 +144,7 @@ import * as scrollFl from "./fl/scroll-fl.js";
 scrollFl.pageNavigation();
 
 /* Функционал добавления классов к хедеру при прокрутке */
-scrollFl.headerScroll();
+//scrollFl.headerScroll();
 
 /* Наблюдатель за объектами c атрибутом data-watch */
 import "./fl/watcher-fl.js";

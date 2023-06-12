@@ -4,7 +4,7 @@ Swiper.use([Navigation, Scrollbar, Pagination]);
 
 const swiper = new Swiper(".swiper-container", {
   //slidesPerView: 7,
-  spaceBetween: 20,
+  spaceBetween: 30,
   //количество пролистываемых слайдов
   //slidesPerGroup: 4,
   loop: true,
@@ -16,7 +16,7 @@ const swiper = new Swiper(".swiper-container", {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 7,
+      slidesPerView: 3,
     },
   },
   pagination: {

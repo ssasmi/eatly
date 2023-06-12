@@ -81,7 +81,7 @@
     margin: 0px 0px 0px auto;
     order: 1;
 
-    @media (min-width: $md4) and (max-width: $md3) {
+    @media (max-width: $md3) {
       display: none;
     }
   }

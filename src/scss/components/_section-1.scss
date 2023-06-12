@@ -1,0 +1,90 @@
+.feature {
+  background-color: #5c4eae;
+  padding: 49px;
+  margin: 110px 0;
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    // width: 100%;
+    // height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    left: 0px;
+    top: 0px;
+    width: 270px;
+    height: 220px;
+    background-image: url("../img/svg/sec-11.svg");
+    @media (max-width:$md4){
+       width: 0;
+    }
+  }
+  &::after {
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    height: 220px;
+    background-image: url("../img/svg/sec-12.svg");
+    @media (max-width:$md4){
+      width: 0;
+   }
+  }
+  &__contain {
+    max-width: 942px;
+    margin: 0px auto;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 132px;
+  }
+  &__item {
+    position: relative;
+    flex: 1;
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -66px;
+      top: 0%;
+      width: 1px;
+      height: 100%;
+      opacity: 0.15;
+      background-color: #c5c5c5;
+    }
+    @media (max-width: $md4) {
+      &:not(:last-child)::after {
+        bottom: -66px;
+        top: unset;
+        right: 0%;
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+  &__subtitle {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.2px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0px 0px rem(11) 0px;
+  }
+  &__desc {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #c5bfed;
+  }
+}
