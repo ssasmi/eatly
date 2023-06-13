@@ -8,6 +8,7 @@
   line-height: 1.3;
   font-weight: 500;
   color: $mainColor;
+  background-color: #F9F9F9;
 }
 
 //create focus-vizible only mobile
@@ -31,8 +32,8 @@
   }
 }
 .link.focus-visible {
-  outline: 1px solid $activeColor;
-  outline-offset: 3px;
+  outline: 2px solid $activeColor;
+  outline-offset: 4px;
 }
 //
 

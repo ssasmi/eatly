@@ -2,6 +2,9 @@
   background-color: #5c4eae;
   padding: 49px;
   margin: 110px 0;
+  @include adaptiv-value("margin-top", 110, 30);
+  @include adaptiv-value("margin-bottom", 110, 50);
+
   position: relative;
   overflow: hidden;
   &::before,

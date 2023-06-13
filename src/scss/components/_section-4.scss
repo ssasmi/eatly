@@ -1,0 +1,74 @@
+.subscribe {
+  margin: rem(182) 0px rem(216) 0px;
+  &__container {
+    background: #5c4eae;
+    border-radius: 30px;
+    padding: 37px 66px 61px;
+    background-image: url("../img/svg/subscribe-2.svg");
+    background-position: center center;
+    background-repeat: repeat;
+  }
+  &__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 105px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 9px;
+
+    color: #ffffff;
+  }
+  &__search {
+    min-height: 68px;
+    min-width: 439.73px;
+    background: #ffffff;
+    box-shadow: 0px 7.25333px 45.3333px rgba(0, 0, 0, 0.1);
+    border-radius: 14.2342px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 7.3px 6.35px 7.3px 21.7px;
+  }
+  &__input {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2676px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #000;
+    outline: 0px solid $activeColor;
+    outline-offset: 4px;
+    flex: 1;
+    border: 0;
+  }
+  &__input::placeholder {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.2676px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: #878787;
+  }
+  &__btn {
+    height: 53.44px;
+    background: #6c5fbc;
+    border-radius: 11.2531px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.752px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    color: #f7f8fa;
+  }
+}
