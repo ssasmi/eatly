@@ -1,5 +1,8 @@
 .subscribe {
   margin: rem(182) 0px rem(216) 0px;
+  @media (max-width:$md4){
+    margin: rem(60) 0px rem(56) 0px;
+  }
   &__container {
     background: #5c4eae;
     border-radius: 30px;
@@ -7,6 +10,22 @@
     background-image: url("../img/svg/subscribe-2.svg");
     background-position: center center;
     background-repeat: repeat;
+    position: relative;
+    @media (max-width:$md4){
+       margin: 0 15px;
+       padding: 27px 36px 31px;
+    }
+    &::after{
+      content:'';
+      position: absolute;
+      right: 75px;
+      bottom: -80px;
+      width: 275px;
+      height: 277px;
+      background-image: url('../img/subscribe-1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
   &__title {
     font-family: "Poppins";
@@ -19,6 +38,10 @@
     margin-bottom: 9px;
 
     color: #ffffff;
+
+    @media (max-width:$md4){
+       font-size: 44px;
+    }
   }
   &__search {
     min-height: 68px;
@@ -70,5 +93,6 @@
     text-transform: uppercase;
     padding: 15px 25px;
     color: #f7f8fa;
+    cursor: pointer;
   }
 }
